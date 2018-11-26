@@ -1,0 +1,19 @@
+.q-div {
+    display: grid;
+    position: relative;
+    min-width: 200px;
+    min-height: 200px;
+    padding-top: 50px;
+}
+.q-txt {
+    position: relative;
+    margin-top: 10px;
+    
+}
+.q-row {
+    position: relative;
+    margin-top: 20px;
+    border: 2px dashed lightblue;
+    border-radius: 10px;
+    padding: 10px;
+}
