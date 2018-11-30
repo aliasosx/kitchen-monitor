@@ -1,19 +1,21 @@
 .q-div {
-    display: grid;
+    display: table-cell;
     position: relative;
     min-width: 200px;
     min-height: 200px;
-    padding-top: 50px;
+    vertical-align: middle;
 }
 .q-txt {
+    display: inline;
     position: relative;
-    margin-top: 10px;
-    
 }
 .q-row {
     position: relative;
-    margin-top: 20px;
+    margin-top: 10px;
     border: 2px dashed lightblue;
     border-radius: 10px;
     padding: 10px;
+}
+.row-status {
+  display: flex;
 }

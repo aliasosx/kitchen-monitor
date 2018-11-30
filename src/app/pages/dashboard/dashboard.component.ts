@@ -14,12 +14,10 @@ export class DashboardComponent implements OnInit {
   orders: any = [];
   ngOnInit() {
 
-    let timer =
-      //timer.subscribe(t => this.tick = t);
-      this.dataService.getOrders().subscribe(data => {
-        this.orders = data;
-        console.log(this.orders.indexOf('7'));
-      });
+    //timer.subscribe(t => this.tick = t);
+    this.dataService.getOrders().subscribe(data => {
+      this.orders = data;
+      console.log(this.orders);
+    });
   }
-
-} 
+}

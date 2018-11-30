@@ -1,17 +1,27 @@
 <div class="container">
+  <h4 class="text-center display-4">Letterp Kitchen Q system</h4>
   <div class="row q-row" *ngFor="let order of orders">
-    <div class="col col-md-3">
-      <div class="q-div text-center">
-        <p class="q-txt display-4">{{ order.q }}</p>
+    <div class="col col-md-2">
+      <div class="d-flex align-items-center justify-content-center">
+        <p class="display-4">{{ order.order.Q }}</p>
       </div>
     </div>
-    <div class="col col-md-6">
-      <ul *ngFor="let food of order.foods">
-        <li>{{ food.food_name }} X {{ food.quantity }}</li>
+    <div class="col col-md-8">
+      <ul *ngFor="let food of order.order.foods">
+        <li class="text-nowrap">{{ food.food_name }} ຈຳນວນ : {{ food.quantity }} ລາຍການ <p class="font-weight-bold text-danger">
+            {{ food.note }}</p>
+        </li>
       </ul>
     </div>
-    <div class="col col-md-3">
-      {{ tick }}
+    <div class="col col-md-2 d-flex align-items-center">
+      <div class="justify-content-end">
+        <div class="row row-status">
+          <p class="q-txt "> ເວລາສັ່ງ : {{ order.order.order_time }}</p>
+        </div>
+        <div class="row row-status">
+          <p class="q-txt "> ສະຖານະ : ດຳເນີນການຢູ່</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
